@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Apple Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .article-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .category-filter .active {
+            color: #3b82f6;
+            border-bottom: 2px solid #3b82f6;
+        }
+    </style>
+</head>
+<body class="font-sans bg-white">
+    <!-- Header (same as index.html) -->
+    <header class="sticky top-0 z-50 bg-black bg-opacity-80 backdrop-blur-md">
+        <nav class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-white text-2xl font-semibold"></a>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#" class="text-gray-300 hover:text-white">Store</a>
+                        <a href="#" class="text-gray-300 hover:text-white">Mac</a>
+                        <a href="#" class="text-gray-300 hover:text-white">iPad</a>
+                        <a href="iphone.html" class="text-gray-300 hover:text-white">iPhone</a>
+                        <a href="#" class="text-gray-300 hover:text-white">Watch</a>
+                        <a href="#" class="text-gray-300 hover:text-white">AirPods</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fas fa-search"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Hero -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Apple Newsroom</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">The latest news and updates from Apple</p>
+        </div>
+    </section>
+
+    <!-- Category Filters -->
+    <section class="py-8 bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="category-filter flex space-x-8 overflow-x-auto pb-2">
+                <a href="#" class="active pb-2 font-medium whitespace-nowrap">All Stories</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 pb-2 font-medium whitespace-nowrap">Product News</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 pb-2 font-medium whitespace-nowrap">Design</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 pb-2 font-medium whitespace-nowrap">Innovation</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 pb-2 font-medium whitespace-nowrap">Environment</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 pb-2 font-medium whitespace-nowrap">Accessibility</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-gray-50 rounded-xl overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-8 md:p-12 lg:p-16">
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mb-4">Featured</span>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Introducing iPhone 15 Pro: The Future of Smartphones</h2>
+                        <p class="text-gray-600 mb-6">Our most advanced iPhone lineup pushes the boundaries of what's possible with titanium design, 48MP camera, and A17 Pro chip.</p>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="h-10 w-10 rounded-full" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Author">
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-gray-900">Tim Cook</p>
+                                <p class="text-sm text-gray-500">September 12, 2023 · 5 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-64 md:h-auto">
+                        <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg" alt="Featured article">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Grid -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-8">Latest Stories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <article class="article-card bg-white rounded-lg overflow-hidden shadow-md">
+                    <img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg" alt="Article 1">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-3">
+                            <span class="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">Environment</span>
+                            <span class="text-gray-500 text-sm">5 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Apple's Carbon Neutral Commitment by 2030</h3>
+                        <p class="text-gray-600 mb-4">How we're working to make every Apple product carbon neutral by the end of the decade.</p>
+                        <div class="flex items-center text-sm">
+                            <span class="text-gray-500">October 5, 2023</span>
+                            <a href="#" class="ml-auto text-blue-600 hover:underline">Read more →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card bg-white rounded-lg overflow-hidden shadow-md">
+                    <img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="Article 2">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-3">
+                            <span class="inline-block bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">Innovation</span>
+                            <span class="text-gray-500 text-sm">8 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">The Technology Behind the A17 Pro Chip</h3>
+                        <p class="text-gray-600 mb-4">Exploring the groundbreaking architecture that powers our most advanced devices.</p>
+                        <div class="flex items-center text-sm">
+                            <span class="text-gray-500">September 28, 2023</span>
+                            <a href="#" class="ml-auto text-blue-600 hover:underline">Read more →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card bg-white rounded-lg overflow-hidden shadow-md">
+                    <img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg" alt="Article 3">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-3">
+                            <span class="inline-block bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium">Design</span>
+                            <span class="text-gray-500 text-sm">6 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">The Evolution of Apple's Design Language</h3>
+                        <p class="text-gray-600 mb-4">From the original Macintosh to today's products, how our design philosophy has evolved.</p>
+                        <div class="flex items-center text-sm">
+                            <span class="text-gray-500">September 20, 2023</span>
+                            <a href="#" class="ml-auto text-blue-600 hover:underline">Read more →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between">
+                <button class="flex items-center space-x-2 text-gray-600 hover:text-blue-600">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Previous</span>
+                </button>
+                <div class="flex space-x-2">
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white">1</a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full text-gray-600 hover:bg-gray-100">2</a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full text-gray-600 hover:bg-gray-100">3</a>
+                    <span class="flex items-end px-2">...</span>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full text-gray-600 hover:bg-gray-100">8</a>
+                </div>
+                <button class="flex items-center space-x-2 text-gray-600 hover:text-blue-600">
+                    <span>Next</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-4">Stay Updated</h2>
+            <p class="text-gray-600 mb-6">Subscribe to our newsletter for the latest Apple news and updates.</p>
+            <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer-gradient text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Shop and Learn</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Store</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Mac</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">iPad</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">iPhone</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Music</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple TV+</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Fitness+</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">iCloud</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Apple Store</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Find a Store</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Genius Bar</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Today at Apple</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Camp</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">About Apple</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Newsroom</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Leadership</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Career Opportunities</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Investors</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">Copyright © 2023 Apple Inc. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Terms of Use</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Sales and Refunds</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Category filter functionality
+        document.querySelectorAll('.category-filter a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('.category-filter .active').classList.remove('active');
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
