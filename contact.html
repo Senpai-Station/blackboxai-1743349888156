@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Apple Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .contact-form input,
+        .contact-form textarea {
+            border: 1px solid #d1d5db;
+            border-radius: 0.375rem;
+            padding: 0.75rem;
+            width: 100%;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        .map-container {
+            height: 400px;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="font-sans bg-white">
+    <!-- Header (same as index.html) -->
+    <header class="sticky top-0 z-50 bg-black bg-opacity-80 backdrop-blur-md">
+        <nav class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-white text-2xl font-semibold"></a>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#" class="text-gray-300 hover:text-white">Store</a>
+                        <a href="#" class="text-gray-300 hover:text-white">Mac</a>
+                        <a href="#" class="text-gray-300 hover:text-white">iPad</a>
+                        <a href="iphone.html" class="text-gray-300 hover:text-white">iPhone</a>
+                        <a href="#" class="text-gray-300 hover:text-white">Watch</a>
+                        <a href="#" class="text-gray-300 hover:text-white">AirPods</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fas fa-search"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">We'd love to hear from you. Reach out to our team for any questions or feedback.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-6">Send us a message</h2>
+                    <form class="contact-form space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-lg font-medium transition duration-300">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-6">Other ways to reach us</h2>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2 flex items-center">
+                                <i class="fas fa-phone-alt text-blue-600 mr-3"></i> Phone Support
+                            </h3>
+                            <p class="text-gray-600">1-800-MY-APPLE (1-800-692-7753)</p>
+                            <p class="text-sm text-gray-500 mt-1">Monday to Friday, 7:00 AM to 10:00 PM CST</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2 flex items-center">
+                                <i class="fas fa-envelope text-blue-600 mr-3"></i> Email Support
+                            </h3>
+                            <p class="text-gray-600">support@appleclone.com</p>
+                            <p class="text-sm text-gray-500 mt-1">We typically respond within 24 hours</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2 flex items-center">
+                                <i class="fas fa-store text-blue-600 mr-3"></i> Retail Stores
+                            </h3>
+                            <p class="text-gray-600">Find an Apple Store near you</p>
+                            <a href="#" class="text-blue-600 hover:underline inline-block mt-1">Locate a store →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-0 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="map-container rounded-lg overflow-hidden shadow-md">
+                <!-- Map placeholder - would be replaced with actual Google Maps embed in production -->
+                <div class="h-full flex items-center justify-center text-gray-500">
+                    <div class="text-center">
+                        <i class="fas fa-map-marked-alt text-4xl mb-3"></i>
+                        <p>Map would be displayed here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <div class="space-y-6 max-w-3xl mx-auto">
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold mb-3">How can I check my warranty status?</h3>
+                    <p class="text-gray-600">You can check your warranty status by visiting our support page and entering your device's serial number. The serial number can be found in Settings > General > About on your device.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold mb-3">What payment methods do you accept?</h3>
+                    <p class="text-gray-600">We accept all major credit cards, Apple Pay, PayPal, and financing options through Apple Card Monthly Installments.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold mb-3">How do I schedule a Genius Bar appointment?</h3>
+                    <p class="text-gray-600">You can schedule an appointment through our website or the Apple Support app. Select your preferred store location and available time slot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer-gradient text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Shop and Learn</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Store</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Mac</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">iPad</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">iPhone</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Music</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple TV+</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Fitness+</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">iCloud</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Apple Store</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Find a Store</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Genius Bar</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Today at Apple</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Camp</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">About Apple</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Newsroom</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Leadership</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Career Opportunities</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Investors</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">Copyright © 2023 Apple Inc. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Terms of Use</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Sales and Refunds</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form validation
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! This would be processed in a real implementation.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
