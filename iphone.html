@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 15 Pro | Apple Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .specs-table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .specs-table th, .specs-table td {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 12px 16px;
+            text-align: left;
+        }
+        .specs-table th {
+            background-color: #f9fafb;
+            font-weight: 600;
+        }
+        .gallery-image {
+            transition: transform 0.3s ease;
+        }
+        .gallery-image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-sans bg-white">
+    <!-- Header (same as index.html) -->
+    <header class="sticky top-0 z-50 bg-black bg-opacity-80 backdrop-blur-md">
+        <nav class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-white text-2xl font-semibold"></a>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#" class="text-gray-300 hover:text-white">Store</a>
+                        <a href="#" class="text-gray-300 hover:text-white">Mac</a>
+                        <a href="#" class="text-gray-300 hover:text-white">iPad</a>
+                        <a href="iphone.html" class="text-white">iPhone</a>
+                        <a href="#" class="text-gray-300 hover:text-white">Watch</a>
+                        <a href="#" class="text-gray-300 hover:text-white">AirPods</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fas fa-search"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Hero -->
+    <section class="bg-black text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">iPhone 15 Pro</h1>
+                    <p class="text-xl text-gray-300 mb-6">Titanium. So strong. So light. So Pro.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full">Buy</a>
+                        <a href="#" class="border border-gray-400 hover:bg-gray-800 text-white px-6 py-2 rounded-full">Learn more</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg" alt="iPhone 15 Pro" class="w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-camera text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Pro Camera System</h3>
+                    <p class="text-gray-600">48MP Main | Ultra Wide | Telephoto</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bolt text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">A17 Pro Chip</h3>
+                    <p class="text-gray-600">Next-generation performance</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mobile-alt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Dynamic Island</h3>
+                    <p class="text-gray-600">A magical way to interact with iPhone</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Technical Specifications</h2>
+            <div class="overflow-x-auto">
+                <table class="specs-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Specification</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Display</td>
+                            <td>6.1-inch Super Retina XDR display</td>
+                        </tr>
+                        <tr>
+                            <td>Chip</td>
+                            <td>A17 Pro chip with 6-core CPU, 6-core GPU</td>
+                        </tr>
+                        <tr>
+                            <td>Camera</td>
+                            <td>Pro camera system: 48MP Main, 12MP Ultra Wide, 12MP Telephoto</td>
+                        </tr>
+                        <tr>
+                            <td>Battery</td>
+                            <td>Up to 23 hours video playback</td>
+                        </tr>
+                        <tr>
+                            <td>Materials</td>
+                            <td>Titanium with textured matte glass back</td>
+                        </tr>
+                        <tr>
+                            <td>Water Resistance</td>
+                            <td>IP68 (maximum depth of 6 meters up to 30 minutes)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg" alt="iPhone front view" class="w-full h-64 object-cover gallery-image">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg" alt="iPhone side view" class="w-full h-64 object-cover gallery-image">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://images.pexels.com/photos/1092641/pexels-photo-1092641.jpeg" alt="iPhone back view" class="w-full h-64 object-cover gallery-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare CTA -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Which iPhone is right for you?</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Compare all iPhone models to find your perfect match.</p>
+            <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-lg font-medium transition duration-300">Compare iPhone models</a>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer-gradient text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Shop and Learn</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Store</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Mac</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">iPad</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">iPhone</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Music</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple TV+</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Fitness+</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">iCloud</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Apple Store</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Find a Store</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Genius Bar</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Today at Apple</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Camp</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">About Apple</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Newsroom</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Leadership</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Career Opportunities</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Investors</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">Copyright © 2023 Apple Inc. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Terms of Use</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Sales and Refunds</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
