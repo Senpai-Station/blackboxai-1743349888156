@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .footer-gradient {
+            background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%);
+        }
+        .product-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-black bg-opacity-80 backdrop-blur-md">
+        <nav class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-8">
+                    <a href="#" class="text-white text-2xl font-semibold"></a>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#" class="text-gray-300 hover:text-white">Store</a>
+                        <a href="#" class="text-gray-300 hover:text-white">Mac</a>
+                        <a href="#" class="text-gray-300 hover:text-white">iPad</a>
+                        <a href="#" class="text-gray-300 hover:text-white">iPhone</a>
+                        <a href="#" class="text-gray-300 hover:text-white">Watch</a>
+                        <a href="#" class="text-gray-300 hover:text-white">AirPods</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fas fa-search"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden bg-gray-900">
+        <div class="absolute inset-0">
+            <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg" 
+                 alt="Apple technology background"
+                 class="w-full h-full object-cover opacity-70"
+                 loading="eager">
+        </div>
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="text-center px-6 z-10">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">Innovation at Apple</h1>
+            <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">Experience the future of technology with our latest products.</p>
+            <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-lg font-medium transition duration-300">Learn more</a>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- iPhone Card -->
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg" alt="iPhone" class="w-full h-64 object-contain">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">iPhone 15 Pro</h3>
+                        <p class="text-gray-600 mb-4">The ultimate iPhone experience with our most advanced camera system.</p>
+                        <a href="iphone.html" class="text-blue-600 font-medium hover:underline">Learn more →</a>
+                    </div>
+                </div>
+
+                <!-- Mac Card -->
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.pexels.com/photos/812264/pexels-photo-812264.jpeg" alt="MacBook" class="w-full h-64 object-contain">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">MacBook Pro</h3>
+                        <p class="text-gray-600 mb-4">Supercharged for pros with the M2 Pro or M2 Max chip.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:underline">Learn more →</a>
+                    </div>
+                </div>
+
+                <!-- Watch Card -->
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg" alt="Apple Watch" class="w-full h-64 object-contain">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Apple Watch Series 9</h3>
+                        <p class="text-gray-600 mb-4">Smarter. Brighter. Mightier. The most advanced Apple Watch yet.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:underline">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Apple</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lock text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Privacy</h3>
+                    <p class="text-gray-600">Built from the ground up with privacy in mind.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-vr-cardboard text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">AR/VR</h3>
+                    <p class="text-gray-600">Pushing the boundaries of augmented reality.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Sustainability</h3>
+                    <p class="text-gray-600">Committed to carbon neutrality by 2030.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-gradient text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Shop and Learn</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Store</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Mac</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">iPad</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">iPhone</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Music</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple TV+</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Fitness+</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">iCloud</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Apple Store</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Find a Store</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Genius Bar</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Today at Apple</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Camp</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">About Apple</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Newsroom</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Apple Leadership</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Career Opportunities</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Investors</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">Copyright © 2023 Apple Inc. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Terms of Use</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Sales and Refunds</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for search functionality
+        document.querySelector('.fa-search').addEventListener('click', function() {
+            alert('Search functionality would appear here in a full implementation');
+        });
+    </script>
+</body>
+</html>
